@@ -1,1 +1,1 @@
-JsGenetic
+Javascript ile Genetik Algoritma
