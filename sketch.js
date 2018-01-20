@@ -7,7 +7,7 @@ var count=0,tiltCount=0;
 var countStoper, resultStop, tiltStop;
 
 function setup() {
-	createCanvas(400,250)
+	createCanvas(750,500)
 	populationStartSize=populationSize
 	//Stop Vars
 	countStoper=50000; 
@@ -18,7 +18,7 @@ function setup() {
 	generatePopulation()
 
 	//Start
-	while(count<=50000 && population[0].result>=300 && tiltCount<=10000){
+	while(count<=countStoper && population[0].result>=resultStop && tiltCount<=tiltStop){
 		crosser(70)
 		mutations(30)
 		erase(populationSize-populationStartSize)
@@ -38,7 +38,7 @@ function setup() {
 		}
 		
 	}
-	Result
+	//Result
 	console.log("Best Result: "+population[0].result)
 	console.log("tilt Count: "+tiltCount)
 	console.log("Count: "+count)
