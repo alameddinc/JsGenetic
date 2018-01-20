@@ -1,5 +1,5 @@
 var cities=[],finalPoint=5000000;
-var textVal,citySize=25,populationSize=20,populationStartSize
+var textVal,citySize=20,populationSize=20,populationStartSize
 var population=[,]
 var count=0,tiltCount=0;
 
@@ -12,7 +12,7 @@ function setup() {
 	//Stop Vars
 	countStoper=50000; 
 	resultStop=1000
-	tiltStop=10000;
+	tiltStop=15000;
 	//Generate Cities and Populations
 	citiesInitialize();
 	generatePopulation()
@@ -55,8 +55,8 @@ function erase(c){
 //Functions
 function drawMap(){
 	background(245)
-	cityPoints()
 	roadDrawer()
+	cityPoints()
 }
 function citiesInitialize(){
 	
